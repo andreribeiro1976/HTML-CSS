@@ -11,6 +11,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td, th {
             
@@ -18,9 +25,17 @@
             padding: 10px;
             
         }
+        thead >tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(100, 241, 241);
         }
         td.num {
             text-align: right;
@@ -30,11 +45,12 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 25px;"">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:100px ;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -330,10 +346,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores sunt nemo tempore, maxime eos fugit accusantium quaerat, labore placeat sit eius id et laborum provident voluptatibus! Aliquam, explicabo fugit Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum quaerat a voluptatem unde ipsa sed nostrum optio ipsam labore cupiditate consectetur quae, repudiandae odio vel facilis animi consequuntur excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nostrum reprehenderit hic vitae, magni labore vero quo ducimus molestias velit iusto eligendi? Mollitia excepturi a quos vitae accusamus atque vero?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quos nemo quo fugit quis error, veniam cum, quidem voluptatibus molestias incidunt. Iusto culpa repudiandae totam ad enim fugit, molestias commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores sunt nemo tempore, maxime eos fugit accusantium quaerat, labore placeat sit eius id et laborum provident voluptatibus! Aliquam, explicabo fugit Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum quaerat a voluptatem unde ipsa sed nostrum optio ipsam labore cupiditate consectetur quae, repudiandae odio vel facilis animi consequuntur excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nostrum reprehenderit hic vitae, magni labore vero quo ducimus molestias velit iusto eligendi? Mollitia excepturi a quos vitae accusamus atque vero?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quos nemo quo fugit quis error, veniam cum, quidem voluptatibus molestias incidunt. Iusto culpa repudiandae totam ad enim fugit, molestias commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores sunt nemo tempore, maxime eos fugit accusantium quaerat, labore placeat sit eius id et laborum provident voluptatibus! Aliquam, explicabo fugit Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum quaerat a voluptatem unde ipsa sed nostrum optio ipsam labore cupiditate consectetur quae, repudiandae odio vel facilis animi consequuntur excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nostrum reprehenderit hic vitae, magni labore vero quo ducimus molestias velit iusto eligendi? Mollitia excepturi a quos vitae accusamus atque vero?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quos nemo quo fugit quis error, veniam cum, quidem voluptatibus molestias incidunt. Iusto culpa repudiandae totam ad enim fugit, molestias commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores sunt nemo tempore, maxime eos fugit accusantium quaerat, labore placeat sit eius id et laborum provident voluptatibus! Aliquam, explicabo fugit Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum quaerat a voluptatem unde ipsa sed nostrum optio ipsam labore cupiditate consectetur quae, repudiandae odio vel facilis animi consequuntur excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nostrum reprehenderit hic vitae, magni labore vero quo ducimus molestias velit iusto eligendi? Mollitia excepturi a quos vitae accusamus atque vero?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quos nemo quo fugit quis error, veniam cum, quidem voluptatibus molestias incidunt. Iusto culpa repudiandae totam ad enim fugit, molestias commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores sunt nemo tempore, maxime eos fugit accusantium quaerat, labore placeat sit eius id et laborum provident voluptatibus! Aliquam, explicabo fugit Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum quaerat a voluptatem unde ipsa sed nostrum optio ipsam labore cupiditate consectetur quae, repudiandae odio vel facilis animi consequuntur excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nostrum reprehenderit hic vitae, magni labore vero quo ducimus molestias velit iusto eligendi? Mollitia excepturi a quos vitae accusamus atque vero?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quos nemo quo fugit quis error, veniam cum, quidem voluptatibus molestias incidunt. Iusto culpa repudiandae totam ad enim fugit, molestias commodi.</p>
 </body>
 </html>
