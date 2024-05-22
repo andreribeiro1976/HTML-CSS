@@ -28,7 +28,7 @@ i#burguer:hover {
     background-color: white;
 }
 menu {
-    display: block;
+    display: none;
 }
 menu > ul {
     list-style-type: none;
